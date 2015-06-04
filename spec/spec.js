@@ -13,6 +13,9 @@ describe('Grading Exercise', function() {
     expect(code.letterGrader(100)).toEqual("A+");
     expect(code.letterGrader(69)).toEqual("D+");
   })
+  it ('takes an array of test scores and returns the average score', function() {
+    expect(code.averageScore([90,95,87,60])).toEqual(83);
+  })
   it('takes an array of grades and returns the median value', function () {
     expect(code.medianScore([52,80,80,86,94])).toEqual(80);
     expect(code.medianScore([3, 4, 5, 7,  9, 24, 45, 53])).toEqual(8);

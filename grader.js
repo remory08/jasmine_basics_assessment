@@ -43,6 +43,14 @@ module.exports = {
     return EquivalentLetterGrade;
   },
 
+  averageScore: function (arr) {
+    var total = 0;
+    for(i=0; i < arr.length; i++) {
+      total += arr[i];
+    }
+    return total/arr.length;
+  },
+
     medianScore: function (arr) {
 
         var half = Math.floor(arr.length/2);
