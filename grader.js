@@ -43,27 +43,6 @@ module.exports = {
     return EquivalentLetterGrade;
   },
 
-    // medianScore: function (arr) {
-    //   var median, i, i1, i2;
-    //   function isOdd(value) {
-    //   	if (value % 2 === 1) {
-    //   		return true;
-    //     }
-    //   	else {
-    //   		return false;
-    //     };
-    //   if (isOdd(arr.length) === true ) {
-    //       i = Math.round(arr.length / 2 );
-    //       return arr[i];
-    //   }
-    //   else {
-    //       i1 = arr.length / 2 ;
-    //       i2 = arr.length / 2 + 1 ;
-    //       median = (arr[i1] + arr[i2]) / 2;
-    //       return median;
-    //     }
-    // },
-
     medianScore: function (arr) {
 
         var half = Math.floor(arr.length/2);
@@ -90,8 +69,5 @@ module.exports = {
        }
        return max;
      }
-
-
-
 
 }
